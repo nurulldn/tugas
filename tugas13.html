@@ -1,0 +1,79 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+    <img src="bgg.jpg" width=100% height=50%>
+
+<div class="w3-bar w3-red">
+ <button class="w3-bar-item w3-button" onclick="tokoBuah('mangga')">Mangga</button>
+ <button class="w3-bar-item w3-button" onclick="tokoBuah('strawberry')">Strawberry</button>
+ <button class="w3-bar-item w3-button" onclick="tokoBuah('apel')">Apel</button>
+ <button class="w3-bar-item w3-button" onclick="tokoBuah('pisang')">Pisang</button>
+ <button class="w3-bar-item w3-button" onclick="tokoBuah('delima')">Delima</button>
+ <button class="w3-bar-item w3-button" onclick="tokoBuah('jeruk')">Jeruk</button>
+</div>
+
+<div id="Home" class="w3-container buah w3-animate-zoom">
+    <br><br>
+    <h1><center>Hallo Semua!</h1>
+    <h2><center>Mari Mengenal Buah-Buahan</h2>
+</div>
+
+ <div id="mangga" class="w3-container buah w3-animate-top" style="display:none">
+    <h2>Mangga</h2>
+    <p>Mangga atau mempelam adalah nama sejenis buah, demikian pula nama pohonnya.<br>
+        Mangga termasuk ke dalam marga Mangifera, yang terdiri dari 35-40 anggota dari suku Anacardiaceae.</p>
+    <img src="mangga.jpg" width=20% height=30%>
+ </div>
+ <div id="strawberry" class="w3-container buah w3-animate-bottom" style="display:none">
+    <h2>Strawberry</h2>
+    <p>Buah strawberrry (Fragaria ananassa) berasal dari Eropa pada abad ke-18. Buah ini adalah hibrida<br>
+        dari dua spesies strawberry liar dari Amerika Utara dan Chili.<br> 
+        Buah strawberry umumnya berwarna merah cerah, tekstur dagingnya berair, dan rasanya manis.
+        </p>
+    <img src="strawberry.jpg" width=20% height=30%>
+ </div>
+ <div id="apel" class="w3-container buah w3-animate-left" style="display:none">
+    <h2>Apel</h2>
+    <p>Apel adalah jenis buah-buahan, atau buah yang dihasilkan dari pohon buah apel.<br>
+        Buah apel biasanya berwarna merah kulitnya jika masak dan (siap dimakan), namun bisa juga kulitnya berwarna hijau atau kuning.<br> 
+        Kulit buahnya agak lembek dan daging buahnya keras. Buah ini memiliki beberapa biji di dalamnya.</p>
+    <img src="apel.jpg" width=20% height=30%>
+ </div>
+ <div id="pisang" class="w3-container buah w3-animate-right" style="display:none">
+    <h2>Pisang</h2>
+    <p>Pisang adalah nama umum yang diberikan pada tumbuhan terna berukuran besar <br>
+        dengan daun memanjang dan besar yang tumbuh langsung dari bagian tangkai. <br>
+        Batang pisang bersifat lunak karena terbentuk dari lapisan pelepah yang lunak dan panjang. <br>
+        Batang yang agak keras berada di bagian permukaan tanah.</p>
+    <img src="pisang.jpg" width=20% height=30%>
+ </div>
+ <div id="delima" class="w3-container buah w3-animate-fading" style="display:none">
+    <h2>Delima</h2>
+    <p>Delima adalah tanaman buah-buahan yang dapat tumbuh hingga 5–8 m. Tanaman ini diperkirakan berasal dari Iran,<br> 
+        namun telah lama dikembangbiakkan di daerah Mediterania. Bangsa Moor memberi nama salah satu kota kuno di Spanyol, <br>
+        Granada berdasarkan nama buah ini.</p>
+    <img src="delima.jpg" width=20% height=30%>
+ </div>
+ <div id="jeruk" class="w3-container buah w3-animate-zoom" style="display:none">
+    <h2>Jeruk</h2>
+    <p>Jeruk atau limau adalah semua tumbuhan berbunga anggota marga Citrus dari suku Rutaceae. <br>
+        Anggotanya berbentuk pohon dengan buah yang berdaging dengan rasa masam yang segar, <br>
+        meskipun banyak di antara anggotanya yang memiliki rasa manis.</p>
+    <img src="jeruk.jpg" width=20% height=30%>
+ </div>
+
+
+<script>
+function tokoBuah(namaBuah) {
+ var i;
+ var x = document.getElementsByClassName("buah");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaBuah).style.display = "block";
+}
+</script>
+</body>
+</html>
